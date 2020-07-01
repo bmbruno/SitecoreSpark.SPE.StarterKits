@@ -7,7 +7,9 @@ $props = @{
     Width = 500
     Height = 600
     Parameters = @(
-        # You can add parameters here to define inputs/labels/controls for the form
+
+
+        @{ Name = "variableName"; Title = "Example Textbox"; Editor = "text"; }
     )
 }
 
@@ -19,3 +21,6 @@ if ($result -ne "ok") {
     Close-Window
     Exit
 }
+
+# Access the values from the form
+Write-Host "Example Textbox: $variableName"
