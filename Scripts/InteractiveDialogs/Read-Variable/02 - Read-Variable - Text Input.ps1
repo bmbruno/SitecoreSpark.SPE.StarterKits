@@ -8,12 +8,13 @@ $props = @{
     Height = 600
     Parameters = @(
 
-
+        # The "Name" param becomes the addressable variable name in code
         @{ Name = "variableName"; Title = "Example Textbox"; Editor = "text"; }
+
     )
 }
 
-# Displays the dialog window
+# Display the dialog window to the user
 $result = Read-Variable @props
 
 # Exit if anything other than the OkButton is clicked

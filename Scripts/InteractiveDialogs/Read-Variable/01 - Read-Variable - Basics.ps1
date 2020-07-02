@@ -7,11 +7,13 @@ $props = @{
     Width = 500
     Height = 600
     Parameters = @(
+
         # You can add parameters here to define inputs/labels/controls for the form
+
     )
 }
 
-# Displays the dialog window
+# Display the dialog window to the user
 $result = Read-Variable @props
 
 # Exit if anything other than the OkButton is clicked
@@ -19,3 +21,6 @@ if ($result -ne "ok") {
     Close-Window
     Exit
 }
+
+# $result from the Read-Variable cmdlet will either be 'ok' or 'cancel'
+Write-Host $result
