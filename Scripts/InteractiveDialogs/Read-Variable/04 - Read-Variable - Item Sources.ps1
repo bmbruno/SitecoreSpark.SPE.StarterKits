@@ -8,13 +8,16 @@ $props = @{
     Height = 600
     Parameters = @(
 
-        #
-        @{ Name = "droplistItem"; Title = "Select an Item"; Editor = "droplist"; Source = "/sitecore/content"; }
+        # Displays a dropdown to select a single item (returns an Item object)
+        # Source path determines how many subitems are in list:
+        #   No trailing slash (/sitecore/content) only loads immediate children
+        #   Trailing slash (/sitecore/content/) includes all subchildren
+        @{ Name = "droplistItem"; Title = "Select an Item"; Editor = "droplist"; Source = "/sitecore/content/"; }
 
-        #
+        # Displays a treeview of the content tree to select one item (returns an Item object)
         @{ Name = "droptreeItem"; Title = "Select an Item"; Editor = "droptree"; Source = "/sitecore/content"; }
 
-        #
+        # Display a multi-select field (returns an array of Item objects)
         @{ Name = "treelistItem"; Title = "Select an Item"; Editor = "treelist"; Source = "/sitecore/content"; }
         
     )
@@ -29,7 +32,16 @@ if ($result -ne "ok") {
     Exit
 }
 
-# Access the values from the form
-Write-Host "droplistItem: $droplistItem"
-Write-Host "droptreeItem: $droptreeItem"
-Write-Host "treelistItem: $treelistItem"
+# Access the values from the form 
+if ($droplistItem) { Write-Host "droplistItem:" $droplistItem.Name }
+
+if ($droptreeItem) { Write-Host "droptreeItem:" $droptreeItem.Name }
+
+if ($treelistItem)
+{
+    Write-Host 'TreeList item(s):'
+    foreach ($item in $treelistItem)
+    {
+        Write-Host " " $item.Name
+    }
+}
