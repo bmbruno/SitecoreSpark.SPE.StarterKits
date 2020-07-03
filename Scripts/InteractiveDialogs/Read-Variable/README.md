@@ -9,8 +9,24 @@ Please refer to the original documentation for the most up-to-date information o
 
 ### 01 - Basics
 
-Lorem ipsum.
+Demonstrates the simplest configuration for a `Read-Variable` dialog (with no input fields).
+
+TOOD: image
 
 ### 02 - Text input
 
+Demonstrates info and textbox fields.
+
+TODO: image
+
 ### 03 - Option Inputs
+
+TODO: description
+
+TODO: image
+
+### 04 - Item Sources
+
+TODO: description
+
+TODO: image

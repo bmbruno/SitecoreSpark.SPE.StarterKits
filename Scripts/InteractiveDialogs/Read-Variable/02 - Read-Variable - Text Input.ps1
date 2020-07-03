@@ -8,6 +8,9 @@ $props = @{
     Height = 600
     Parameters = @(
 
+        # Renders informational text
+        @{ Title = "This is a text label."; Editor = "info" }
+
         # The "Name" param becomes the addressable variable name in code
         @{ Name = "variableName"; Title = "Example Textbox"; Editor = "text"; }
 
