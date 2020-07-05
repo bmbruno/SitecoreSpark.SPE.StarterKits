@@ -11,7 +11,7 @@ $props = @{
         # Displays a dropdown to select a single item (returns an Item object)
         # Source path determines how many subitems are in list:
         #   No trailing slash (/sitecore/content) only loads immediate children
-        #   Trailing slash (/sitecore/content/) includes all subchildren
+        #   Trailing slash q(/sitecore/content/) includes all subchildren
         @{ Name = "droplistItem"; Title = "Select an Item"; Editor = "droplist"; Source = "/sitecore/content/"; }
 
         # Displays a treeview of the content tree to select one item (returns an Item object)
