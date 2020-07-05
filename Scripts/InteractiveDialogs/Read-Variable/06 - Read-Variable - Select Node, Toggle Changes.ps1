@@ -32,6 +32,6 @@ if ($result -ne "ok") {
 # Verify an item was selected
 if (-not $startItem)
 {
-    Write-Host "Please select an item to continue."
+    Write-Host 'Please select an item to continue.'
     Exit
 }
