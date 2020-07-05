@@ -26,7 +26,10 @@ $props = @{
     Height = 600
     Parameters = @(
 
+        # Displays a select list dropdown with the given $stateList for options
         @{ Name = "dropdownState"; Title = "Select a State"; Editor = "dropdown"; Options = $stateList; }
+
+        # Displays radio buttons with the given $cityList for values
         @{ Name = "radioCity"; Title = "Choose a City"; Editor = "radio"; Options = $cityList; }
 
     )
