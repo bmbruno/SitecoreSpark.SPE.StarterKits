@@ -30,3 +30,7 @@ TODO: image
 TODO: description
 
 TODO: image
+
+### 05 - Select Node, Toggle Changes
+
+Let's the user select a starting node in the content tree for an update operation, then let's them set a variable to enable/disable updates. This might allow for a "dry run" of updates before choosing to execute changes against content.
