@@ -33,7 +33,7 @@ TODO: image
 
 ### 05 - Input Validation
 
-TODO: script
+Demonstrates two types of input validation: mandatory fields and custom validator script block.
 
 TODO: description
 

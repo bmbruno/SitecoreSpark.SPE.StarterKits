@@ -8,23 +8,21 @@ $props = @{
     Height = 600
     Parameters = @(
 
-        # Displays a textbox; the Mandatory property makes this a required field
-        @{ Name = "variableName"; Title = "Example Textbox"; Editor = "text"; Mandatory = $true; }
+        # FIELD VALIDATION: the Mandatory property makes this a required field
+        @{ Name = "itemName"; Title = "Example Textbox"; Editor = "text"; Mandatory = $true; }
 
-        # Displays a dropdown to select a single item (returns an Item object)
-        @{ Name = "droplistItem"; Title = "Select an Item"; Editor = "droplist"; Source = "/sitecore/content/"; }
-
-        # Displays a treeview of the content tree to select one item (returns an Item object)
-        @{ Name = "droptreeItem"; Title = "Select an Item"; Editor = "droptree"; Source = "/sitecore/content"; }
-
-
+        # 'Mandatory' is also applied on this droplist
+        @{ Name = "droplistItem"; Title = "Select an Item"; Editor = "droplist"; Source = "/sitecore/content/"; Mandatory = $true; }
         
     )
 
-    # This properties executes a script block that is used for field validation
-    Validation = {
+    # ADVANCED VALIDATION: This property executes a script block that is used for custom field validation
+    Validator = {
 
-
+        # Access the value of 'droplistItem' defined above in 'Parameters'; verify that it's a certain template
+        if ($variables.droplistItem.Value.TemplateName -ne 'Webpage') {
+            $variables.droplistItem.Error = "You must choose a webpage item."
+        }
 
     }
 }
@@ -36,18 +34,4 @@ $result = Read-Variable @props
 if ($result -ne "ok") {
     Close-Window
     Exit
-}
-
-# Access the values from the form 
-if ($droplistItem) { Write-Host "droplistItem:" $droplistItem.Name }
-
-if ($droptreeItem) { Write-Host "droptreeItem:" $droptreeItem.Name }
-
-if ($treelistItem)
-{
-    Write-Host 'TreeList item(s):'
-    foreach ($item in $treelistItem)
-    {
-        Write-Host " " $item.Name
-    }
 }
