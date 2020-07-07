@@ -39,6 +39,6 @@ TODO: description
 
 TODO: image
 
-### 06 - Select Node, Toggle Changes
+### 06 - Select Node, Run Report
 
-Let's the user select a starting node in the content tree for an update operation, then let's them set a variable to enable/disable updates. This might allow for a "dry run" of updates before choosing to execute changes against content.
+Allows the user to select a node in the content tree to use a the start item of a report.
