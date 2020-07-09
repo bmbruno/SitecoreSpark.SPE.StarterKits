@@ -5,7 +5,7 @@ $startSource = '/sitecore/content/home'
 $props = @{
     Title = "Report Name"
     Description = "About this report."
-    OkButtonName = "Submit"
+    OkButtonName = "Run Report"
     CancelButtonName = "Cancel"
     Width = 500
     Height = 600
@@ -14,7 +14,7 @@ $props = @{
         # Displays a treeview of the content tree to select one item (returns an Item object)
         @{ Name = "startItem"; Title = "Select an Item"; Editor = "droptree"; Source = $startSource }
 
-        # Displays a checkbox t
+        # 
         @{ Name = ""; Title = "Execute Updates"; Editor = "check"; Value = $false }
 
     )
