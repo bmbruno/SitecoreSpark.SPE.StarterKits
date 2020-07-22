@@ -1,6 +1,3 @@
-# Default path where the droptree should begin
-$startSource = '/sitecore/content/home'
-
 # Set up properties for the dialog window
 $props = @{
     Title = "Report Name"
@@ -12,7 +9,7 @@ $props = @{
     Parameters = @(
 
         # Displays a treeview of the content tree to select one item (returns an Item object)
-        @{ Name = "startItem"; Title = "Select an Item"; Editor = "droptree"; Source = $startSource }
+        @{ Name = "startItem"; Title = "Select an Item"; Editor = "droptree"; Source = '/sitecore/content/home' }
 
     )
 }
