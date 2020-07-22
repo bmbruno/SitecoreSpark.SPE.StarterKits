@@ -14,9 +14,6 @@ $props = @{
         # Displays a treeview of the content tree to select one item (returns an Item object)
         @{ Name = "startItem"; Title = "Select an Item"; Editor = "droptree"; Source = $startSource }
 
-        # 
-        @{ Name = ""; Title = "Execute Updates"; Editor = "check"; Value = $false }
-
     )
 }
 
