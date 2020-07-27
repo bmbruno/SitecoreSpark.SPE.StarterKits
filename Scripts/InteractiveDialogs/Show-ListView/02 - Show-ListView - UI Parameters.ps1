@@ -11,11 +11,15 @@ $props = @(
 
 # Show list view dialog with custom UI elements defined:
 
-# InfoTitle / InfoDescription: displays a custom informational message near the top of the window
+# InfoTitle: title of the custom information message near the top of the window
+# InfoDescription: text for the custom information message (see InfoTitle above)
 # MissingDataMessage: message displayed when no results are returned
+# Icon: path to an icon file addressable by Sitecore
 
 $items | Show-ListView `
     -Property $props `
+    -Title 'Custom Title'
     -InfoTitle 'Example Info Title' `
     -InfoDescription 'Lorem ipsum dolor sit amet.' `
     -MissingDataMessage 'There are no results to display.'
+    -Icon 'Applications/16x16/preferences.png'
