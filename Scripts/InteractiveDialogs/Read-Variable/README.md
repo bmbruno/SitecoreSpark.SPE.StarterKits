@@ -11,7 +11,7 @@ Please refer to the original SPE documentation for the most up-to-date informati
 
 Demonstrates the simplest configuration for a `Read-Variable` dialog (with no input fields).
 
-TOOD: image
+![01 - Read Variable - Basics](../../../Images/InteractiveDialogs/Read-Variable/01-Basics.png)
 
 ### 02 - Text input
 
