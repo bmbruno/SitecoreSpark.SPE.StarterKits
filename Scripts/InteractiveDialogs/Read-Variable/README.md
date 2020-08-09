@@ -17,7 +17,7 @@ Demonstrates the simplest configuration for a `Read-Variable` dialog (with no in
 
 Demonstrates info and textbox fields.
 
-TODO: image
+![02 - Read Variable - Text Input](../../../Images/InteractiveDialogs/Read-Variable/02-TextInput.png)
 
 ### 03 - Option Inputs
 

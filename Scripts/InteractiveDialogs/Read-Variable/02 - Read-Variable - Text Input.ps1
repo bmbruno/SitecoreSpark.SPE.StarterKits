@@ -5,7 +5,7 @@ $props = @{
     OkButtonName = "Submit"
     CancelButtonName = "Cancel"
     Width = 500
-    Height = 600
+    Height = 300
     Parameters = @(
 
         # Renders informational text
