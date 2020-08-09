@@ -15,21 +15,21 @@ Demonstrates the simplest configuration for a `Read-Variable` dialog (with no in
 
 ## 02 - Text Input
 
-Demonstrates info and textbox fields.
+Demonstrates _info_ and _textbox_ fields.
 
 ![02 - Read-Variable - Text Input](../../../Images/InteractiveDialogs/Read-Variable/02-TextInput.png)
 
 ## 03 - Option Inputs
 
-Demonstrates using lists of options to populate dropdown and radio selection fields.
+Demonstrates lists of options to populate _dropdown_ and _radio_ selection fields.
 
 ![03 - Read-Variable - Option Inputs](../../../Images/InteractiveDialogs/Read-Variable/03-OptionInputs.png)
 
 ## 04 - Item Sources
 
-TODO: description
+Demonstrates how to use the _droplist_, _droptree_, and _treelist_ fields to select items from the Sitecore content tree.
 
-TODO: image
+![04 - Read-Variable - Item Sources](../../../Images/InteractiveDialogs/Read-Variable/04-ItemSources.png)
 
 ## 05 - Input Validation
 

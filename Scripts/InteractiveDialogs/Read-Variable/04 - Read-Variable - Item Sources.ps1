@@ -12,13 +12,13 @@ $props = @{
         # Source path determines how many subitems are in list:
         #   No trailing slash (/sitecore/content) only loads immediate children
         #   Trailing slash q(/sitecore/content/) includes all subchildren
-        @{ Name = "droplistItem"; Title = "Select an Item"; Editor = "droplist"; Source = "/sitecore/content/"; }
+        @{ Name = "droplistItem"; Title = "Select an Item (Droplist)"; Editor = "droplist"; Source = "/sitecore/content/"; }
 
         # Displays a treeview of the content tree to select one item (returns an Item object)
-        @{ Name = "droptreeItem"; Title = "Select an Item"; Editor = "droptree"; Source = "/sitecore/content"; }
+        @{ Name = "droptreeItem"; Title = "Select an Item (Droptree)"; Editor = "droptree"; Source = "/sitecore/content"; }
 
         # Display a multi-select field (returns an array of Item objects)
-        @{ Name = "treelistItem"; Title = "Select an Item"; Editor = "treelist"; Source = "/sitecore/content"; }
+        @{ Name = "treelistItem"; Title = "Select an Item (Treelist)"; Editor = "treelist"; Source = "/sitecore/content"; }
         
     )
 }
