@@ -11,19 +11,19 @@ Please refer to the original SPE documentation for the most up-to-date informati
 
 Demonstrates the simplest configuration for a `Read-Variable` dialog (with no input fields).
 
-![01 - Read Variable - Basics](../../../Images/InteractiveDialogs/Read-Variable/01-Basics.png)
+![01 - Read-Variable - Basics](../../../Images/InteractiveDialogs/Read-Variable/01-Basics.png)
 
-## 02 - Text input
+## 02 - Text Input
 
 Demonstrates info and textbox fields.
 
-![02 - Read Variable - Text Input](../../../Images/InteractiveDialogs/Read-Variable/02-TextInput.png)
+![02 - Read-Variable - Text Input](../../../Images/InteractiveDialogs/Read-Variable/02-TextInput.png)
 
 ## 03 - Option Inputs
 
-TODO: description
+Demonstrates using lists of options to populate dropdown and radio selection fields.
 
-TODO: image
+![03 - Read-Variable - Option Inputs](../../../Images/InteractiveDialogs/Read-Variable/03-OptionInputs.png)
 
 ## 04 - Item Sources
 
