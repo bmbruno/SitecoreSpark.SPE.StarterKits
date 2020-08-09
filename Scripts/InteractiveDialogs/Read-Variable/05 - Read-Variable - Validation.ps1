@@ -5,7 +5,7 @@ $props = @{
     OkButtonName = "Submit"
     CancelButtonName = "Cancel"
     Width = 500
-    Height = 600
+    Height = 350
     Parameters = @(
 
         # FIELD VALIDATION: the Mandatory property makes this a required field

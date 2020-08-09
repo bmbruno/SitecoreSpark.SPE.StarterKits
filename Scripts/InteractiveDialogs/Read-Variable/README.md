@@ -35,9 +35,7 @@ Demonstrates how to use the _droplist_, _droptree_, and _treelist_ fields to sel
 
 Demonstrates two types of input validation: mandatory fields and custom validator script block.
 
-TODO: description
-
-TODO: image
+![05 - Read-Variable - Validation](../../../Images/InteractiveDialogs/Read-Variable/05-Validation.png)
 
 ## 06 - Select Node, Run Report
 
