@@ -39,4 +39,6 @@ Demonstrates two types of input validation: mandatory fields and custom validato
 
 ## 06 - Select Node, Run Report
 
-Allows the user to select a node in the content tree to use a the start item of a report.
+Starter kit for a simple item-based report or processor. Allows the user to select a single item in the content tree.
+
+![06 - Read-Variable - Select Node, Run Report](../../../Images/InteractiveDialogs/Read-Variable/06-SelectNode-RunReport.png)

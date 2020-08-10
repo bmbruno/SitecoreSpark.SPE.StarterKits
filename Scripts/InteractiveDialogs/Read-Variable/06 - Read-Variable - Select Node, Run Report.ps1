@@ -5,7 +5,7 @@ $props = @{
     OkButtonName = "Run Report"
     CancelButtonName = "Cancel"
     Width = 500
-    Height = 600
+    Height = 300
     Parameters = @(
 
         # Displays a treeview of the content tree to select one item (returns an Item object)
@@ -29,3 +29,6 @@ if (-not $startItem)
     Write-Host 'Please select an item to continue.'
     Exit
 }
+
+# Do something with the selected item
+Write-Host "Item path:" $startItem.Paths.FullPath
