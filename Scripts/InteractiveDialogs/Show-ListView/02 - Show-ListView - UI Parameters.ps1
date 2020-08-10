@@ -16,6 +16,9 @@ $props = @(
 # InfoDescription: text for the custom information message (see InfoTitle above)
 # MissingDataMessage: message displayed when no results are returned
 # Icon: path to an icon file addressable by Sitecore
+# Width: display width of the window (pixels)
+# Height: display height of the window (pixels)
+# Modal: displays in floating window (necessary for the width/height params to work)
 
 $items | Show-ListView `
     -Property $props `
@@ -23,6 +26,7 @@ $items | Show-ListView `
     -InfoTitle 'Example Info Title' `
     -InfoDescription 'Lorem ipsum dolor sit amet.' `
     -MissingDataMessage 'There are no results to display.' `
-    -Icon 'Applications/16x16/preferences.png'
-
-    
+    -Icon 'Applications/16x16/preferences.png' `
+    -Width 880 `
+    -Height 450 `
+    -Modal
