@@ -23,3 +23,11 @@ Demonstrates the use of a properties object to define custom headers and assign 
 Demonstrates several UI parameters available for the cmdlet.
 
 ![03 - Show-ListView - UI Parameters](../../../Images/InteractiveDialogs/Show-ListView/03-UIParameters.png)
+
+## 04 - Custom Data Object
+
+Demonstrates how to build up a .NET object to create data for a ListView.
+
+## 04 - Custom PSObject
+
+Demonstrates how to build up a .NET object to create data for a ListView.
