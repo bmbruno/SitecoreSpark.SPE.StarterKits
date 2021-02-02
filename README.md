@@ -1,6 +1,4 @@
-# README
-
-## SitecoreSpark.SPE.StarterKits
+# SPE Starter Kits
 
 A collection of copy-and-paste scripts to be used as starting points for common automation tasks in Sitecore PowerShell Extensions (SPE).
 
@@ -12,15 +10,7 @@ The intial release of this repository focuses on options offered by the `Read-Va
 
 ## Version
 
-0.1.0
-
-## Categories
-
-
-
-
-
-
+0.80
  
 ## Contact the Author
 
